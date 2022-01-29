@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="k3ng_keyer.ino" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.k3ng_keyer.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_callsign_prefixes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_dependencies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_esp32duino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_esp32_dev.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_esp32_dev.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_esp_dev.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_fk_10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_fk_11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_generic_STM32F103C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_iz3gme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_k5bcq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_maple_mini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_megakeyer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_mortty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_mortty_regular.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_mortty_regular_with_potentiometer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_mortty_so2r.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_mortty_so2r_with_potentiometer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_nanokeyer_rev_b.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_nanokeyer_rev_d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_opencwkeyer_mk2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_open_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_test_everything.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_tinykeyer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_yaacwk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_features_and_options_yccc_so2r_mini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_hardware.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_esp32_dev.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_fk_10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_fk_11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_generic_STM32F103C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_iz3gme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_k5bcq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_maple_mini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_megakeyer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_mortty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_mortty_regular.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_mortty_regular_with_potentiometer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_mortty_so2r.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_mortty_so2r_with_potentiometer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_nanokeyer_rev_b.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_nanokeyer_rev_d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_opencwkeyer_mk2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_open_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_test_everything.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_tinykeyer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_yaacwk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_pin_settings_yccc_so2r_mini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_esp32_dev.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_fk_10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_fk_11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_generic_STM32F103C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_iz3gme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_k5bcq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_maple_mini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_megakeyer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_mortty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_mortty_regular.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_mortty_regular_with_potentiometer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_mortty_so2r.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_mortty_so2r_with_potentiometer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_nanokeyer_rev_b.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_nanokeyer_rev_d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_opencwkeyer_mk2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_open_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_test_everything.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_tinykeyer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_yaacwk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_settings_yccc_so2r_mini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_stm32duino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_training_text_czech.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_training_text_english.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyer_training_text_norsk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\buttonarray\buttonarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\buttonarray\buttonarray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
