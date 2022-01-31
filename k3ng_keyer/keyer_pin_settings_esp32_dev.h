@@ -2,6 +2,8 @@
 
 ESP32 dev board                                                                                  
 See pin assignment and limitations: https://circuits4you.com/2018/12/31/esp32-devkit-esp32-wroom-gpio-pinout/
+ADC2 is utylized by WiFi so if WiFi feature is used, ADC2 pins cannot be used for ADC inputs:
+25, 26, 27, 14, 12, 13, 21, 22, 24, but can be used as digital i/o or PWM, interrupts etc.
 */
 
 /* Pins - you must review these and configure ! */
@@ -75,8 +77,8 @@ FEATURE_SIDETONE_SWITCH
 
 //ps2 keyboard pins
 #ifdef FEATURE_PS2_KEYBOARD
-  #define ps2_keyboard_data 0 //16 
-  #define ps2_keyboard_clock 0 //17    // this must be on an interrupt capable pin!
+  #define ps2_keyboard_data 13 
+  #define ps2_keyboard_clock 12    // this must be on an interrupt capable pin!
 #endif //FEATURE_PS2_KEYBOARD
 
 // rotary encoder pins and options - rotary encoder code from Jim Balls M0CKE
@@ -106,8 +108,8 @@ FEATURE_SIDETONE_SWITCH
 
 // FEATURE_CW_DECODER & OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR
 // See https://github.com/k3ng/k3ng_cw_keyer/wiki/385-Feature:-CW-Decoder for details
-#define cw_decoder_pin 0             // This is for use with external decoding hardware
-#define cw_decoder_audio_input_pin 0 // This is for audio detection decoding using OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR; this must be an analog pin!
+#define cw_decoder_pin 13             // This is for use with external decoding hardware
+#define cw_decoder_audio_input_pin 39 // 0 // This is for audio detection decoding using OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR; this must be an analog pin!
 #define cw_decoder_indicator 0       // Output - goes HIGH when cw tone is detected by OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR
 
 
@@ -120,7 +122,7 @@ FEATURE_SIDETONE_SWITCH
 #endif
 
 #if defined(FEATURE_LCD_BACKLIGHT_AUTO_DIM)
-  #define keyer_power_led 0   // must be a PWM-capable pin
+  #define keyer_power_led 15   // must be a PWM-capable pin
 #endif
 
 #if defined(FEATURE_CAPACITIVE_PADDLE_PINS)

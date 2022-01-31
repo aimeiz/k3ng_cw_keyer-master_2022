@@ -16,8 +16,8 @@
 //#define FEATURE_SIDETONE_NEWTONE      // Use the NewTone library, ~1k smaller code size than the standard tone library. Uses timer1 (pins 9 or 10)  https://bitbucket.org/teckel12/arduino-new-tone/wiki/Home
 #define FEATURE_SERIAL_HELP
 #define FEATURE_HELL
-// #define FEATURE_PS2_KEYBOARD        // Use a PS2 keyboard to send code - Change keyboard layout (non-US) in K3NG_PS2Keyboard.h.  Additional options below.
-// #define FEATURE_USB_KEYBOARD          // Use a USB keyboard to send code - Uncomment three lines in k3ng_keyer.ino (search for note_usb_uncomment_lines)
+////// #define FEATURE_PS2_KEYBOARD        // Use a PS2 keyboard to send code - Change keyboard layout (non-US) in K3NG_PS2Keyboard.h.  Additional options below.
+////// #define FEATURE_USB_KEYBOARD          // Use a USB keyboard to send code - Uncomment three lines in k3ng_keyer.ino (search for note_usb_uncomment_lines)
 // #define FEATURE_CW_COMPUTER_KEYBOARD  // Have an Arduino Due or Leonardo act as a USB HID (Human Interface Device) keyboard and use the paddle to "type" characters on the computer -- uncomment this line in ino file: #include <Keyboard.h>
 #define FEATURE_DEAD_OP_WATCHDOG
 #define FEATURE_AUTOSPACE
@@ -34,9 +34,9 @@
 // #define FEATURE_LCD_MATHERTEL_PCF8574 // https://github.com/mathertel/LiquidCrystal_PCF8574
 // #define FEATURE_LCD_I2C_FDEBRABANDER //https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
 // #define FEATURE_LCD_HD44780
-// #define FEATURE_CW_DECODER              // https://github.com/k3ng/k3ng_cw_keyer/wiki/385-Feature:-CW-Decoder 
+ #define FEATURE_CW_DECODER              // https://github.com/k3ng/k3ng_cw_keyer/wiki/385-Feature:-CW-Decoder 
 // #define FEATURE_SLEEP                   // go to sleep after x minutes to conserve battery power (not compatible with Arduino DUE, may have mixed results with Mega and Mega ADK)
-// #define FEATURE_LCD_BACKLIGHT_AUTO_DIM  // turn off LCD backlight and/or dim Power Indicator LED after x minutes (LED requires a PWM pin)
+#define FEATURE_LCD_BACKLIGHT_AUTO_DIM  // turn off LCD backlight and/or dim Power Indicator LED after x minutes (LED requires a PWM pin)
 #define FEATURE_ROTARY_ENCODER          // rotary encoder speed control
 #define FEATURE_CMOS_SUPER_KEYER_IAMBIC_B_TIMING
 // #define FEATURE_USB_MOUSE               // Uncomment three lines in k3ng_keyer.ino (search for note_usb_uncomment_lines)
@@ -48,7 +48,7 @@
 #define FEATURE_QLF
 // #define FEATURE_EEPROM_E24C1024
 ////#define FEATURE_STRAIGHT_KEY //This features disables memory macros on ESP32 SP5IOU 20220124
-//#define FEATURE_DYNAMIC_DAH_TO_DIT_RATIO
+#define FEATURE_DYNAMIC_DAH_TO_DIT_RATIO
 // #define FEATURE_PADDLE_ECHO         // you may also need to comment out line 19 in the file keyer_dependencies.h
 // #define FEATURE_STRAIGHT_KEY_ECHO
 // #define FEATURE_AMERICAN_MORSE
@@ -57,7 +57,7 @@
 #define FEATURE_SEQUENCER
 #define FEATURE_WIFI //SP5IOU 20220129 Works only for ESP32_DEV board and family HARDWARE_ESP32_DEV
 #define FEATURE_WEB_SERVER      // Details: https://github.com/k3ng/k3ng_cw_keyer/wiki/390-Feature:-Ethernet,-Web-Server,-and-Internet-Linking
-// #define FEATURE_INTERNET_LINK   // Details: https://github.com/k3ng/k3ng_cw_keyer/wiki/390-Feature:-Ethernet,-Web-Server,-and-Internet-Linking
+#define FEATURE_INTERNET_LINK   // Details: https://github.com/k3ng/k3ng_cw_keyer/wiki/390-Feature:-Ethernet,-Web-Server,-and-Internet-Linking
 
 // #define FEATURE_COMMAND_LINE_INTERFACE_ON_SECONDARY_PORT     // Activate the Command Line interface on the secondary serial port
 //#define OPTION_PRIMARY_SERIAL_PORT_DEFAULT_WINKEY_EMULATION  // Use when activating both FEATURE_WINKEY_EMULATION and FEATURE_COMMAND_LINE_INTERFACE 
@@ -68,11 +68,11 @@
 ///#define OPTION_INCLUDE_PTT_TAIL_FOR_MANUAL_SENDING
 ///#define OPTION_EXCLUDE_PTT_HANG_TIME_FOR_MANUAL_SENDING
 /// #define OPTION_WINKEY_DISCARD_BYTES_AT_STARTUP     // if ASR is not disabled, you may need this to discard errant serial port bytes at startup
-// #define OPTION_WINKEY_STRICT_EEPROM_WRITES_MAY_WEAR_OUT_EEPROM // with this activated the unit will write non-volatile settings to EEPROM when set by Winkey commands
+ #define OPTION_WINKEY_STRICT_EEPROM_WRITES_MAY_WEAR_OUT_EEPROM // with this activated the unit will write non-volatile settings to EEPROM when set by Winkey commands
 // #define OPTION_WINKEY_SEND_WORDSPACE_AT_END_OF_BUFFER
 //#define OPTION_WINKEY_STRICT_HOST_OPEN               // require an admin host open Winkey command before doing any other commands
 #define OPTION_WINKEY_2_SUPPORT                      // comment out to revert to Winkey version 1 emulation
-///#define OPTION_WINKEY_INTERRUPTS_MEMORY_REPEAT
+#define OPTION_WINKEY_INTERRUPTS_MEMORY_REPEAT
 //#define OPTION_WINKEY_UCXLOG_9600_BAUD              // use this only with UCXLog configured for Winkey 9600 baud mode
 //#define OPTION_WINKEY_2_HOST_CLOSE_NO_SERIAL_PORT_RESET  // (Required for Win-Test to function)
 // #define OPTION_WINKEY_FREQUENT_STATUS_REPORT         // activate this to make Winkey emulation play better with RUMlog and RUMped
@@ -96,7 +96,7 @@
 ///#define OPTION_CW_KEYBOARD_CAPSLOCK_BEEP
 // #define OPTION_CW_KEYBOARD_ITALIAN
 // #define OPTION_CW_KEYBOARD_GERMAN
-// #define OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR  // https://github.com/k3ng/k3ng_cw_keyer/wiki/385-Feature:-CW-Decoder 
+ #define OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR  // https://github.com/k3ng/k3ng_cw_keyer/wiki/385-Feature:-CW-Decoder 
 // #define OPTION_INVERT_PADDLE_PIN_LOGIC
 // #define OPTION_ADVANCED_SPEED_DISPLAY //enables "nerd" speed visualization on display: wpm, cpm (char per min), duration of dit and dah in milliseconds and ratio (contributed by Giorgio, IZ2XBZ)
 // #define OPTION_PROSIGN_SUPPORT    // additional prosign support for paddle and straight key echo on display, CLI, and in memory storage
