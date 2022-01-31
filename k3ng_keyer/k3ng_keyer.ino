@@ -1372,7 +1372,7 @@ If you offer a hardware kit using this software, show your appreciation by sendi
 
 */
 
-#define CODE_VERSION "2022.01.29"
+#define CODE_VERSION "2022.01.30"
 #define eeprom_magic_number 41              // you can change this number to have the unit re-initialize EEPROM
 //#include <arduino.h>
 //#include <stdio.h>
@@ -1396,8 +1396,7 @@ If you offer a hardware kit using this software, show your appreciation by sendi
   #include <EEPROM.h>
   #include <Tone32.h> // SP5IOU 2021/08/02 library Tone32h assure ESP32 compatibility with avr tone / no tone built in commands. 
                       // Download from here https://github.com/lbernstone/Tone32
-//  #include "keyer_esp32duino.h" 
-  #include "keyer_esp32_dev.h" 
+  #include "keyer_esp32_dev.h"
 #else
   #include <avr/pgmspace.h>
   #include <avr/wdt.h>
@@ -1609,6 +1608,7 @@ If you offer a hardware kit using this software, show your appreciation by sendi
 #include <WiFiServer.h>
 #define EthernetClient WiFiClient
 #define EthernetServer WiFiServer
+#define EthernetUDP WiFiUDP
 #endif
 
 #if defined(FEATURE_ETHERNET)
