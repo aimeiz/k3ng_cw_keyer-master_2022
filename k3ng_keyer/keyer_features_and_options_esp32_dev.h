@@ -40,6 +40,7 @@
 #define FEATURE_ROTARY_ENCODER          // rotary encoder speed control
 #define FEATURE_CMOS_SUPER_KEYER_IAMBIC_B_TIMING
 // #define FEATURE_USB_MOUSE               // Uncomment three lines in k3ng_keyer.ino (search for note_usb_uncomment_lines)
+//#define FEATURE_TOUCH_PADDLE_PINS //SP5IOU 20220201 Works on ESP32_DEV platform. Uses same pins as paddles if pins are touch capable. Dissactivates normal paddles
 // #define FEATURE_CAPACITIVE_PADDLE_PINS  // remove the bypass capacitors on the paddle_left and paddle_right lines when using capactive paddles
 // #define FEATURE_LED_RING                // Mayhew Labs Led Ring support
 #define FEATURE_ALPHABET_SEND_PRACTICE  // enables command mode S command - created by Ryan, KC2ZWM

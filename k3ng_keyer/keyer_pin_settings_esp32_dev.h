@@ -10,8 +10,8 @@ ADC2 is utylized by WiFi so if WiFi feature is used, ADC2 pins cannot be used fo
 #ifndef keyer_pin_settings_h
 #define keyer_pin_settings_h
 
-#define paddle_left 32 //32 Needs external 10k Pullup can be used as touch paddle //22 //36
-#define paddle_right 33 //33 Needs external 10k Pullup can be used as touch paddle23 //39
+#define paddle_left 32 //32 Needs external 10k Pullup. 32 can be used as touch paddle on ESP32 platform //SP5IOU 20220201
+#define paddle_right 33 //33 Needs external 10k Pullup. 33 can be used as touch paddle on ESP32 platform //SP5IOU 20220201
 #define tx_key_line_1 27  // (high = key down/tx on)
 #define tx_key_line_2 25 
 #define tx_key_line_3 0
@@ -129,6 +129,9 @@ FEATURE_SIDETONE_SWITCH
   #define capactive_paddle_pin_inhibit_pin 0     // if this pin is defined and is set high, the capacitive paddle pins will switch to normal (non-capacitive) sensing mode
 #endif
 
+#if defined(FEATURE_TOUCH_PADDLE_PINS)
+
+#endif
 #ifdef FEATURE_4x4_KEYPAD
   #define Row3 0
   #define Row2 0
