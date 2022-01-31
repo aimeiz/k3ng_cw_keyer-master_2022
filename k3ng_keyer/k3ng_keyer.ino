@@ -1343,7 +1343,7 @@ Recent Update History
     Added Wifi connectivity for ESP32_DEV board and integrated it with FEATURE_WEB_SERVER
    Files modified - k3ng_keyer.ino, keyer_hardware.h, keyer_debug.h 
    Files added: keyer_features_and_options_ESP32_dev.h, keyer_settings_esp32_dev.h, keyer_pin_settings_esp32_dev.h, keyer_esp32_dev.h
-   Added CLI extended command wifi <ssid> <password>
+   Added CLI extended command wifi <ssid> <password> .
      
   Documentation: https://github.com/k3ng/k3ng_cw_keyer/wiki
 

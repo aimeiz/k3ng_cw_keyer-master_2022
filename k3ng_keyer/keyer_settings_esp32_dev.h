@@ -97,7 +97,7 @@ GENERIC STM32F103C
   #define capacitance_threshold 2
 #endif //FEATURE_CAPACITIVE_PADDLE_PINS
 
-#ifdef FEATURE_TOUCH_PADDLE_PINS //SP5IOU 20220201 Works on ESP32_DEV platform
+#ifdef FEATURE_TOUCH_PADDLE_PINS //SP5IOU 20220131  Works on ESP32_DEV platform
 #define touch_threshold 20 //Set it according to touch paddles construction. Smaller value - less sensitive.
 #endif
 
