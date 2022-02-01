@@ -55,7 +55,7 @@ FEATURE_SIDETONE_SWITCH
 
 
 //lcd pins
-#if defined (FEATURE_LCD_4BIT) || defined(FEATURE_LCD_8BIT) //corrected by SP5IOU 20210802
+#ifdef FEATURE_LCD_4BIT
   #define lcd_rs 17
   #define lcd_enable 18
   #define lcd_d4 19

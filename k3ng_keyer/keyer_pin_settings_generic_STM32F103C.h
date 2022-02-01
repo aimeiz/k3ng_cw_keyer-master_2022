@@ -11,16 +11,15 @@ GENERIC STM32F103C Blue Pill board
 #define paddle_left PA1
 #define paddle_right PA0
 #define tx_key_line_1 PC15       // (high = key down/tx on)
-#define tx_key_line_2 PB11
+#define tx_key_line_2 0
 #define tx_key_line_3 0
 #define tx_key_line_4 0
 #define tx_key_line_5 0
 #define tx_key_line_6 0
-//#define sidetone_line PB9         // connect a speaker for sidetone
-uint8_t sidetone_line = PB9;        // sp5iou must be variable declaration instead of #define... for STM32 boards.
+#define sidetone_line PB9         // connect a speaker for sidetone
 #define potentiometer 0        // Speed potentiometer (0 to 5 V) Use pot from 1k to 10k
 #define ptt_tx_1 PC14              // PTT ("push to talk") lines
-#define ptt_tx_2 PC13              //   Can be used for keying fox transmitter, T/R switch, or keying slow boatanchors
+#define ptt_tx_2 0              //   Can be used for keying fox transmitter, T/R switch, or keying slow boatanchors
 #define ptt_tx_3 0              //   These are optional - set to 0 if unused
 #define ptt_tx_4 0
 #define ptt_tx_5 0
@@ -43,25 +42,25 @@ FEATURE_SIDETONE_SWITCH
 */
 
 #ifdef FEATURE_SIDETONE_SWITCH
-  #define SIDETONE_SWITCH PA15
+  #define SIDETONE_SWITCH 0 //PA15
 #endif //FEATURE_SIDETONE_SWITCH
 
 
 //lcd pins
-#if defined (FEATURE_LCD_4BIT) || defined(FEATURE_LCD_8BIT) //corrected by SP5IOU 20210802
-  #define lcd_rs PB3 //PB12
-  #define lcd_enable PB4 //PB13
-  #define lcd_d4 PB12 //PB14
-  #define lcd_d5 PB13 //PB15
-  #define lcd_d6 PB14 //PA8
-  #define lcd_d7 PB15 //PA9
+#ifdef FEATURE_LCD_4BIT
+  #define lcd_rs PB12
+  #define lcd_enable PB13
+  #define lcd_d4 PB14
+  #define lcd_d5 PB15
+  #define lcd_d6 PA8
+  #define lcd_d7 PA9
 #endif //FEATURE_LCD_4BIT
 
 #if defined(FEATURE_LCD_8BIT) // addition four data lines for 8 bit LCD control
-  #define lcd_d0 PB0 //20
-  #define lcd_d1 PB1 //21
-  #define lcd_d2 PB10 //22
-  #define lcd_d3 PB11 //23
+  #define lcd_d0 20
+  #define lcd_d1 21
+  #define lcd_d2 22
+  #define lcd_d3 23
 #endif //FEATURE_LCD_4BIT || defined(FEATURE_LCD_8BIT)
 
 
@@ -170,3 +169,4 @@ FEATURE_SIDETONE_SWITCH
   #error "Multiple pin_settings.h files included somehow..."
 
 #endif //keyer_pin_settings_h
+

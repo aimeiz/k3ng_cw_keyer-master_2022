@@ -45,9 +45,6 @@
     <ClInclude Include="keyer_features_and_options_esp32_dev.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="keyer_features_and_options_esp_dev.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="keyer_features_and_options_fk_10.h">
       <Filter>Header Files</Filter>
     </ClInclude>

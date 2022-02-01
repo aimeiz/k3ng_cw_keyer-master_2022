@@ -1337,7 +1337,7 @@ Recent Update History
     2021.03.23
       Added pins pin_sending_mode_automatic and pin_sending_mode_manual which go HIGH for automatica and manual sending modes
 
-    2022.01.29 //SP5IOU
+    2022.02.01 //SP5IOU
     Added support for ESP32_DEV board (Beta) Compile using ESP32 SDK ver 2.0.1 on newer ver 2.0.2 Sidetone doesn't work - bug in SDK
     Need to update arduino with library Tone32 available at https://github.com/lbernstone/Tone32 
     Added Wifi connectivity for ESP32_DEV board and integrated it with FEATURE_WEB_SERVER
@@ -1372,7 +1372,7 @@ If you offer a hardware kit using this software, show your appreciation by sendi
 
 */
 
-#define CODE_VERSION "2022.01.31"
+#define CODE_VERSION "2022.02.01"
 #define eeprom_magic_number 41              // you can change this number to have the unit re-initialize EEPROM
 //#include <arduino.h>
 //#include <stdio.h>
@@ -1531,7 +1531,11 @@ If you offer a hardware kit using this software, show your appreciation by sendi
   #include "keyer_pin_settings.h"
   #include "keyer_settings.h"
 #endif
-
+#if !defined(HARDWARE_GENERIC_STM32F103C)
+  #if (paddle_left == 0) || (paddle_right == 0)
+  #error "You cannot define paddle_left or paddle_right as 0 to disable"
+  #endif
+#endif
 #if defined(FEATURE_BUTTONS)
   #include "src/buttonarray/buttonarray.h"
 #endif
@@ -17787,7 +17791,7 @@ void initialize_keyer_state(){
     switch_to_tx_silent(1);
   #endif
 
-  #if (!defined(ARDUINO_SAM_DUE) || (defined(ARDUINO_SAM_DUE) && defined(FEATURE_EEPROM_E24C1024))) && !defined(HARDWARE_GENERIC_STM32F103C) && !defined (HARDWARE_ESP32_DEV)
+  #if (!defined(ARDUINO_SAM_DUE) || (defined(ARDUINO_SAM_DUE) && defined(FEATURE_EEPROM_E24C1024))) && !defined(HARDWARE_GENERIC_STM32F103C) &&(HARDWARE_MAPPLE_MINI)&& !defined (HARDWARE_ESP32_DEV)
     memory_area_end = EEPROM.length() - 1;
   #else
     #if defined(HARDWARE_GENERIC_STM32F103C)

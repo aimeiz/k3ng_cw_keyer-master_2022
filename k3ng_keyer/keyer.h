@@ -44,32 +44,53 @@
 #define SERIAL_WINKEY_EMULATION 1
 
 #define SERIAL_SEND_BUFFER_SPECIAL_START 13
-#define SERIAL_SEND_BUFFER_WPM_CHANGE 14        
-#define SERIAL_SEND_BUFFER_PTT_ON 15            
-#define SERIAL_SEND_BUFFER_PTT_OFF 16           
-#define SERIAL_SEND_BUFFER_TIMED_KEY_DOWN 17    
-#define SERIAL_SEND_BUFFER_TIMED_WAIT 18        
-#define SERIAL_SEND_BUFFER_NULL 19              
-#define SERIAL_SEND_BUFFER_PROSIGN 20           
-#define SERIAL_SEND_BUFFER_HOLD_SEND 21         
-#define SERIAL_SEND_BUFFER_HOLD_SEND_RELEASE 22 
+#define SERIAL_SEND_BUFFER_WPM_CHANGE 14
+#define SERIAL_SEND_BUFFER_PTT_ON 15
+#define SERIAL_SEND_BUFFER_PTT_OFF 16
+#define SERIAL_SEND_BUFFER_TIMED_KEY_DOWN 17
+#define SERIAL_SEND_BUFFER_TIMED_WAIT 18
+#define SERIAL_SEND_BUFFER_NULL 19
+#define SERIAL_SEND_BUFFER_PROSIGN 20
+#define SERIAL_SEND_BUFFER_HOLD_SEND 21
+#define SERIAL_SEND_BUFFER_HOLD_SEND_RELEASE 22
 #define SERIAL_SEND_BUFFER_MEMORY_NUMBER 23
 #define SERIAL_SEND_BUFFER_TX_CHANGE 24
 #define SERIAL_SEND_BUFFER_SPECIAL_END 25
 
 #if defined(OPTION_PROSIGN_SUPPORT)
-  #define PROSIGN_START 127
-  #define PROSIGN_AA 128
-  #define PROSIGN_AS 129
-  #define PROSIGN_BK 130
-  #define PROSIGN_CL 131
-  #define PROSIGN_CT 132
-  #define PROSIGN_KN 133
-  #define PROSIGN_NJ 134
-  #define PROSIGN_SK 135
-  #define PROSIGN_SN 136
-  #define PROSIGN_HH 137    // iz0rus
-  #define PROSIGN_END 138  // iz0rus
+  // #define PROSIGN_START 127
+  // #define PROSIGN_AA    128
+  // #define PROSIGN_AS    129
+  // #define PROSIGN_BK    130
+  // #define PROSIGN_CL    131
+  // #define PROSIGN_CT    132
+  // #define PROSIGN_KN    133
+  // #define PROSIGN_NJ    134
+  // #define PROSIGN_SK    135
+  // #define PROSIGN_SN    136
+  // #define PROSIGN_HH    137        // iz0rus
+  // #define PROSIGN_SOS   138
+  // #define PROSIGN_SO    139
+  // #define PROSIGN_OS    140
+  // #define PROSIGN_END   141
+
+  #define PROSIGN_START 177
+  #define PROSIGN_AA    178
+  #define PROSIGN_AS    179
+  #define PROSIGN_BK    180
+  #define PROSIGN_CL    181
+  #define PROSIGN_CT    182
+  #define PROSIGN_KN    183
+  #define PROSIGN_NJ    184
+  #define PROSIGN_SK    185
+  #define PROSIGN_SN    186
+  #define PROSIGN_HH    187        // iz0rus
+  #define PROSIGN_SOS   188
+  #define PROSIGN_SO    189
+  #define PROSIGN_OS    190
+  #define PROSIGN_END   191
+
+
 #endif
 
 #define SERIAL_SEND_BUFFER_NORMAL 0
@@ -199,7 +220,7 @@
 #define CLI_MILL_MODE_PADDLE_SEND 1
 #define CLI_MILL_MODE_KEYBOARD_RECEIVE 2
 
-#define COMMAND_SPEED_MODE_KEYER_WPM 0 
+#define COMMAND_SPEED_MODE_KEYER_WPM 0
 #define COMMAND_SPEED_MODE_COMMAND_MODE_WPM 1
 
 #define SD_CARD_UNINITIALIZED 0

@@ -2,8 +2,8 @@
 
 #include "buttonarray.h"
 
-#define ARRAY_PIN 36
-#define NB_BUTTONS 9
+#define ARRAY_PIN A3
+#define NB_BUTTONS 2
 #define ENCODER_PIN A1
 
 
@@ -14,20 +14,21 @@ long button_depress_time;
 
 
 ButtonArray button_array(ARRAY_PIN, NB_BUTTONS, false);
-//ButtonArray encoder(ENCODER_PIN, 1, false);
+ButtonArray encoder(ENCODER_PIN, 1, false);
 
 void setup() {
   Serial.begin(115200);
   delay(1000); 
   button_array.AddAll();
-//  encoder.AddAll();
+  encoder.AddAll();
 }
 
 void loop() {
   
   int analogbuttontemp = button_array.Pressed();
- // if (encoder.Pressed() == 0) {
- //   Serial.println("encoder pressed ");
+  if (encoder.Pressed() == 0) {
+    Serial.println("encoder pressed ");
+  }
   if (analogbuttontemp >= 0 ) {
     // button pressed.
 

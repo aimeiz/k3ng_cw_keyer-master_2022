@@ -7,13 +7,13 @@
 #define DEBOUNCE_MS 200
 #define NUMBER_OF_BUTTON_READS_TO_AVERAGE 19
 
-#if defined(ARDUINO_ARCH_ESP32) || defined(ARDUINO_GENERIC_STM32F103C) || defined(HARDWARE_ESP32_DEV)
+#if defined(ARDUINO_ARCH_ESP32) || defined(ARDUINO_GENERIC_STM32F103C)
     #define max_value 4095
 #else
     #define max_value 1023
 #endif
 
-#define r1_value 11.5
+#define r1_value 10
 #define r2_value 1
 
 /* contributed by W6IPA */

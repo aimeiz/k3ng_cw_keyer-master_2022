@@ -39,13 +39,15 @@
 #define winkey_xoff_threshold 20         // the number of chars in the buffer when we begin sending XOFFs
 #define winkey_xon_threshold 10          // the number of chars in the buffer below which we deactivate XOFF
 #define default_memory_repeat_time 3000  // time in milliseconds
-#define LCD_COLUMNS 16
-#define LCD_ROWS 2
+#define LCD_COLUMNS 11
+#define LCD_ROWS 4
 #define lcd_i2c_address_mathertel_PCF8574 0x27             // I2C address of display for FEATURE_LCD_MATHERTEL_PCF8574
 #define lcd_i2c_address_fdebrander_lcd 0x27                // I2C address of display for FEATURE_LCD_I2C_FDEBRABANDER
 #define lcd_i2c_address_ydv1_lcd 0x27                      // I2C address of display for FEATURE_LCD_YDv1
 //#define lcd_i2c_address_ydv1_lcd 0x38                    // I2C address of display for FEATURE_LCD_YDv1
 #define lcd_i2c_address_sainsmart_lcd 0x27                // I2C address of display for FEATURE_LCD_SAINSMART_I2C 
+#define oled_i2c_address_ssd1306 0x3C                     // I2C address of display for FEATURE_OLED_SSD1306
+#define lcd_i2c_address_twiliquidcrystal_lcd 0x27                // I2C address of display for FEATURE_LCD_TWILIQUIDCRYSTAL 
 #define hell_pixel_microseconds 4025
 #define program_memory_limit_consec_spaces 1
 #define serial_leading_zeros 1            // set to 1 to activate leading zeros in serial numbers (i.e. #1 = 001)
@@ -73,7 +75,7 @@
 #define eeprom_write_time_ms 30000
 
 #ifdef FEATURE_BUTTONS
-  #define analog_buttons_number_of_buttons 9 //4  // includes the command button (command button + 3 memory buttons = 4)
+  #define analog_buttons_number_of_buttons 4  // includes the command button (command button + 3 memory buttons = 4)
   #define analog_buttons_r1 10
   #define analog_buttons_r2 1
 #endif
@@ -288,7 +290,7 @@
 #define sidetone_volume_low_limit 10
 #define sidetone_volume_high_limit 500
 
-#define custom_startup_field CODE_VERSION //"your custom text here"   // an example could be callsign and name, eg. "AB1XYZ Bob", (or "Worlds best operator" which requires a 20 column display), string length shouldo be no more than the number of columns on the display
+#define custom_startup_field "your custom text here"   // an example could be callsign and name, eg. "AB1XYZ Bob", (or "Worlds best operator" which requires a 20 column display), string length shouldo be no more than the number of columns on the display
 
 #define command_mode_acknowledgement_character 'R'
 
@@ -314,3 +316,5 @@
   #define command_error "ERR"
 
 #endif //FEATURE_COMMAND_MODE_ENHANCED_CMD_ACKNOWLEDGEMENT
+
+#define HI_TEXT "HI"  // Must be in UPPER case

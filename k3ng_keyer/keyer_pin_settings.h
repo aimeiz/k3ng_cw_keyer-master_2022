@@ -4,18 +4,18 @@
 
 #define paddle_left 2
 #define paddle_right 5
-#define tx_key_line_1 12       // (high = key down/tx on)
-#define tx_key_line_2 14
-#define tx_key_line_3 16
-#define tx_key_line_4 18
+#define tx_key_line_1 11       // (high = key down/tx on)
+#define tx_key_line_2 12
+#define tx_key_line_3 0
+#define tx_key_line_4 0
 #define tx_key_line_5 0
 #define tx_key_line_6 0
 #define sidetone_line 4         // connect a speaker for sidetone
 #define potentiometer A0        // Speed potentiometer (0 to 5 V) Use pot from 1k to 10k
-#define ptt_tx_1 13              // PTT ("push to talk") lines
-#define ptt_tx_2 15              //   Can be used for keying fox transmitter, T/R switch, or keying slow boatanchors
-#define ptt_tx_3 17              //   These are optional - set to 0 if unused
-#define ptt_tx_4 19
+#define ptt_tx_1 0              // PTT ("push to talk") lines
+#define ptt_tx_2 0              //   Can be used for keying fox transmitter, T/R switch, or keying slow boatanchors
+#define ptt_tx_3 0              //   These are optional - set to 0 if unused
+#define ptt_tx_4 0
 #define ptt_tx_5 0
 #define ptt_tx_6 0
 #define tx_key_dit 0            // if defined, goes active for dit (any transmitter) - customized with tx_key_dit_and_dah_pins_active_state and tx_key_dit_and_dah_pins_inactive_state
@@ -42,7 +42,7 @@ FEATURE_SIDETONE_SWITCH
 
 //lcd pins
 #if defined(FEATURE_LCD_4BIT) || defined(FEATURE_LCD_8BIT)
-  #define lcd_rs  11 //A2
+  #define lcd_rs A2
   #define lcd_enable 10  // pin 10 is used by Ethernet shield and will conflict with that
   #define lcd_d4 6
   #define lcd_d5 7
@@ -75,8 +75,8 @@ FEATURE_SIDETONE_SWITCH
 // rotary encoder pins and options - rotary encoder code from Jim Balls M0CKE
 #ifdef FEATURE_ROTARY_ENCODER
   #define OPTION_ENCODER_HALF_STEP_MODE     // Half-step mode?
-  #define rotary_pin1 A6 //0                      // CW Encoder Pin
-  #define rotary_pin2 A7 //0                    // CCW Encoder Pin
+  #define rotary_pin1 0                      // CW Encoder Pin
+  #define rotary_pin2 0                    // CCW Encoder Pin
   #define OPTION_ENCODER_ENABLE_PULLUPS     // define to enable weak pullups.
 #endif //FEATURE_ROTARY_ENCODER
 

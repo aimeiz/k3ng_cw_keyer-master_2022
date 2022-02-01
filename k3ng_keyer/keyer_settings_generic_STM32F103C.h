@@ -80,7 +80,7 @@ GENERIC STM32F103C
 #define eeprom_write_time_ms 30000
 
 #ifdef FEATURE_BUTTONS
-  #define analog_buttons_number_of_buttons 5 // For Keypad only command butrton is neaded 6 //4  // includes the command button (command button + 3 memory buttons = 4) //sp5iou 20180319
+  #define analog_buttons_number_of_buttons 1 // For Keypad only command butrton is neaded 6 //4  // includes the command button (command button + 3 memory buttons = 4) //sp5iou 20180319
   #define analog_buttons_r1 10
   #define analog_buttons_r2 1
 #endif
@@ -90,7 +90,7 @@ GENERIC STM32F103C
   #define number_of_memories byte(analog_buttons_number_of_buttons-1)
 #else
 //  #define number_of_memories byte(12)
-  #define number_of_memories byte(4) //sp5iou 20180329 With many memories, be carefull to not put to much content. It caould disable memory programming and eeprom formatting is then necessary
+  #define number_of_memories byte(10) //sp5iou 20180329 With many memories, be carefull to not put to much content. It caould disable memory programming and eeprom formatting is then necessary
 #endif
 
 #ifdef FEATURE_CAPACITIVE_PADDLE_PINS
@@ -296,7 +296,7 @@ GENERIC STM32F103C
 #define sidetone_volume_low_limit 10
 #define sidetone_volume_high_limit 500
 
-#define custom_startup_field CODE_VERSION //"your custom text here"   // an example could be callsign and name, eg. "AB1XYZ Bob", (or "Worlds best operator" which requires a 20 column display), string length shouldo be no more than the number of columns on the display
+#define custom_startup_field "your custom text here"   // an example could be callsign and name, eg. "AB1XYZ Bob", (or "Worlds best operator" which requires a 20 column display), string length shouldo be no more than the number of columns on the display
 
 #define command_mode_acknowledgement_character 'E'
 
@@ -322,3 +322,5 @@ GENERIC STM32F103C
   #define command_error "ERR"
 
 #endif //FEATURE_COMMAND_MODE_ENHANCED_CMD_ACKNOWLEDGEMENT
+
+#define HI_TEXT "HI"  // Must be in UPPER case
