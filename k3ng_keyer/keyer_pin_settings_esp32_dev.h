@@ -18,7 +18,7 @@ ADC2 is utylized by WiFi so if WiFi feature is used, ADC2 pins cannot be used fo
 #define tx_key_line_4 0
 #define tx_key_line_5 0
 #define tx_key_line_6 0
-#define sidetone_line 23         // connect a speaker for sidetone
+#define sidetone_line 12 //23         // connect a speaker for sidetone
 #define potentiometer 39 //A3 - VN pin // Speed potentiometer (0 to 3.3V) Use pot from 1k to 10k
 #define ptt_tx_1 26             // PTT ("push to talk") lines
 #define ptt_tx_2 0              //   Can be used for keying fox transmitter, T/R switch, or keying slow boatanchors
@@ -118,7 +118,7 @@ FEATURE_SIDETONE_SWITCH
 #endif //FEATURE_COMPETITION_COMPRESSION_DETECTION
 
 #if defined(FEATURE_SLEEP)
-  #define keyer_awake 0
+  #define keyer_awake paddle_right //Press paddle right to awake keyer (Hardware esp32_dev)
 #endif
 
 #if defined(FEATURE_LCD_BACKLIGHT_AUTO_DIM)
